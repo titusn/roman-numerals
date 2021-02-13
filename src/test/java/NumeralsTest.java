@@ -22,5 +22,6 @@ public class NumeralsTest {
         assertEquals("XXVII", numerals.convert(27));
         assertEquals("XL", numerals.convert(40));
         assertEquals("LIV", numerals.convert(54));
+        assertEquals("CXXIV", numerals.convert(124));
     }
 }
