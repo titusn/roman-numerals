@@ -1,17 +1,17 @@
 package com.titusnachbauer.numerals;
 
 public class Numerals {
-    public String convert(int i) {
+    public String convert(int number) {
         StringBuilder result = new StringBuilder();
-        if (i == 6) {
+        if (number == 6) {
             result.append("VI");
-        } else if (i == 5) {
+        } else if (number == 5) {
             result.append("V");
         }
-        else if (i == 4) {
+        else if (number == 4) {
             result.append("IV");
         } else {
-            for (;i >= 1;i--) {
+            for (;number >= 1;number--) {
                 result.append("I");
             }
         }
