@@ -1,6 +1,9 @@
 package com.titusnachbauer.numerals;
 
 public class Numerals {
+    private final String[] ROMAN = {"IX", "V", "IV", "I"};
+    private final int[] ARABIC = {9, 5, 4, 1};
+
     public String convert(int number) {
         StringBuilder result = new StringBuilder();
         int remaining = number;
