@@ -23,5 +23,6 @@ public class NumeralsTest {
         assertEquals("XL", numerals.convert(40));
         assertEquals("LIV", numerals.convert(54));
         assertEquals("CXXIV", numerals.convert(124));
+        assertEquals("DLXIX", numerals.convert(569));
     }
 }
