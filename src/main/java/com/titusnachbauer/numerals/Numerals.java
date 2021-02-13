@@ -4,14 +4,14 @@ public class Numerals {
     public String convert(int number) {
         StringBuilder result = new StringBuilder();
         int remaining = number;
-        if (number == 9) {
+        if (remaining == 9) {
             result.append("IX");
             remaining -= 9;
-        } else if (number >= 5) {
+        } else if (remaining >= 5) {
             result.append("V");
             remaining -= 5;
         }
-        else if (number == 4) {
+        else if (remaining == 4) {
             result.append("IV");
             remaining -= 4;
         }
