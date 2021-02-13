@@ -3,7 +3,9 @@ package com.titusnachbauer.numerals;
 public class Numerals {
     public String convert(int i) {
         StringBuilder result = new StringBuilder();
-        if (i == 5) {
+        if (i == 6) {
+            result.append("VI");
+        } else if (i == 5) {
             result.append("V");
         }
         else if (i == 4) {
