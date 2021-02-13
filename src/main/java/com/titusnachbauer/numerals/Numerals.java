@@ -1,14 +1,14 @@
 package com.titusnachbauer.numerals;
 
 public class Numerals {
-    private final String[] ROMAN = {"IX", "V", "IV", "I"};
-    private final int[] ARABIC = {9, 5, 4, 1};
+    private final String[] ROMAN = {"X", "IX", "V", "IV", "I"};
+    private final int[] ARABIC = {10, 9, 5, 4, 1};
 
     public String convert(int number) {
         StringBuilder result = new StringBuilder();
         int remaining = number;
         for (int i = 0; i < ARABIC.length; i++) {
-            if (remaining >= ARABIC[i]) {
+            while (remaining >= ARABIC[i]) {
                 result.append(ROMAN[i]);
                 remaining -= ARABIC[i];
             }
