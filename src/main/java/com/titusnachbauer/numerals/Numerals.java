@@ -13,7 +13,6 @@ public class Numerals {
                 remaining -= ARABIC[i];
             }
         }
-        result.append("I".repeat(Math.max(0, remaining)));
         return result.toString();
     }
 }
