@@ -11,5 +11,6 @@ public class NumeralsTest {
         assertEquals("II", numerals.convert(2));
         assertEquals("III", numerals.convert(3));
         assertEquals("IV", numerals.convert(4));
+        assertEquals("V", numerals.convert(5));
     }
 }
