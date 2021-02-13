@@ -1,8 +1,10 @@
 package com.titusnachbauer.numerals;
 
+import java.util.HashMap;
+
 public class Numerals {
-    private final String[] ROMAN = {"D", "C", "L", "XL", "X", "IX", "V", "IV", "I"};
-    private final int[] ARABIC = {500, 100, 50, 40, 10, 9, 5, 4, 1};
+    private final String[] ROMAN = {"M","CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+    private final int[] ARABIC = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
 
     public String convert(int number) {
         StringBuilder result = new StringBuilder();
