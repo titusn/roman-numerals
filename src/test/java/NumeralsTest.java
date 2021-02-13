@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class NumeralsTest {
     @Test
-    void ConvertNumberToNumeralTest() {
+    public void ConvertNumberToNumeralTest() {
         Numerals numerals = new Numerals();
         assertEquals("I", numerals.convert(1));
         assertEquals("II", numerals.convert(2));
