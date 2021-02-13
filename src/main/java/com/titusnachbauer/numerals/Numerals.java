@@ -2,6 +2,10 @@ package com.titusnachbauer.numerals;
 
 public class Numerals {
     public String convert(int i) {
-        return "I";
+        if (i == 1) {
+            return "I";
+        } else {
+            return "II";
+        }
     }
 }

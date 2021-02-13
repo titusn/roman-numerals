@@ -8,5 +8,6 @@ public class NumeralsTest {
     void ConvertNumberToNumeralTest() {
         Numerals numerals = new Numerals();
         assertEquals("I", numerals.convert(1));
+        assertEquals("II", numerals.convert(2));
     }
 }
