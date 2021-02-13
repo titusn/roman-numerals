@@ -3,18 +3,16 @@ package com.titusnachbauer.numerals;
 public class Numerals {
     public String convert(int number) {
         StringBuilder result = new StringBuilder();
-        if (number == 6) {
-            result.append("VI");
-        } else if (number == 5) {
+        int remaining = number;
+        if (number >= 5) {
             result.append("V");
+            remaining -= 5;
         }
         else if (number == 4) {
             result.append("IV");
-        } else {
-            for (;number >= 1;number--) {
-                result.append("I");
-            }
+            remaining -= 4;
         }
+        result.append("I".repeat(Math.max(0, remaining)));
         return result.toString();
     }
 }
