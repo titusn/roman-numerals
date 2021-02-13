@@ -15,5 +15,6 @@ public class NumeralsTest {
         assertEquals("VI", numerals.convert(6));
         assertEquals("VII", numerals.convert(7));
         assertEquals("VIII", numerals.convert(8));
+        assertEquals("IX", numerals.convert(9));
     }
 }
